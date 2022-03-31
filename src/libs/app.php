@@ -1,6 +1,6 @@
 <?php
 
-require '../conf/conf.php';
+include 'src/conf/conf.php';
 
 class App{
 
@@ -8,10 +8,10 @@ class App{
         echo "<h1>Foro Web Universitario App</h1>";
 
         $url = cleanURL();
-        loadController($url);
+        self::loadController($url);
     }
 
-    function loadController(controller){
+    function loadController($controller){
         // .. TODO: loadController
     }
 }
