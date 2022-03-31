@@ -1,18 +1,24 @@
 <?php
 
-require '../conf/conf.php';
+include dirname(__FILE__)."/../conf/conf.php";
+include dirname(__FILE__)."/../conf/route.php";
 
 class App{
 
     function __construct(){
-        echo "<h1>Foro Web Universitario App</h1>";
+
+        settingErrors();
 
         $url = cleanURL();
-        loadController($url);
+        //$url = "ABC";
+        self::loadMain($url);
     }
 
-    function loadController(controller){
+    function loadMain($controller){
         // .. TODO: loadController
+        $mainC = redirectToController($controller);
+        $mainC->loadModel('login');        
+        $mainC->render();
     }
 }
 ?>

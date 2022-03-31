@@ -1,0 +1,42 @@
+[30-Mar-2022 22:39:19 Europe/Berlin] A LA GRANDE LE PUSE CUCA
+[30-Mar-2022 22:40:56 Europe/Berlin] A LA GRANDE LE PUSE CUCA
+[30-Mar-2022 22:45:08 Europe/Berlin] A LA GRANDE LE PUSE CUCA
+[30-Mar-2022 22:45:10 Europe/Berlin] A LA GRANDE LE PUSE CUCA
+[30-Mar-2022 22:47:16 Europe/Berlin] A LA GRANDE LE PUSE CUCA
+[30-Mar-2022 22:47:37 Europe/Berlin] A LA GRANDE LE PUSE CUCA
+[30-Mar-2022 22:47:37 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function loadController() in E:\XAMPP\htdocs\PROJECTS\foro_web\src\libs\app.php:23
+Stack trace:
+#0 E:\XAMPP\htdocs\PROJECTS\foro_web\src\libs\app.php(17): App->loadMain(Array)
+#1 E:\XAMPP\htdocs\PROJECTS\foro_web\index.php(5): App->__construct()
+#2 {main}
+  thrown in E:\XAMPP\htdocs\PROJECTS\foro_web\src\libs\app.php on line 23
+[30-Mar-2022 22:47:49 Europe/Berlin] A LA GRANDE LE PUSE CUCA
+[30-Mar-2022 22:47:49 Europe/Berlin] PHP Warning:  require_once(/src/main/controllers/c_login.php): Failed to open stream: No such file or directory in E:\XAMPP\htdocs\PROJECTS\foro_web\src\conf\route.php on line 13
+[30-Mar-2022 22:47:49 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '/src/main/controllers/c_login.php' (include_path='E:\XAMPP\php\PEAR') in E:\XAMPP\htdocs\PROJECTS\foro_web\src\conf\route.php:13
+Stack trace:
+#0 E:\XAMPP\htdocs\PROJECTS\foro_web\src\libs\app.php(22): redirectToController(Array)
+#1 E:\XAMPP\htdocs\PROJECTS\foro_web\src\libs\app.php(17): App->loadMain(Array)
+#2 E:\XAMPP\htdocs\PROJECTS\foro_web\index.php(5): App->__construct()
+#3 {main}
+  thrown in E:\XAMPP\htdocs\PROJECTS\foro_web\src\conf\route.php on line 13
+[30-Mar-2022 22:48:05 Europe/Berlin] A LA GRANDE LE PUSE CUCA
+[30-Mar-2022 22:48:05 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Controller" not found in E:\XAMPP\htdocs\PROJECTS\foro_web\src\main\controllers\c_login.php:6
+Stack trace:
+#0 E:\XAMPP\htdocs\PROJECTS\foro_web\src\conf\route.php(13): require_once()
+#1 E:\XAMPP\htdocs\PROJECTS\foro_web\src\libs\app.php(22): redirectToController(Array)
+#2 E:\XAMPP\htdocs\PROJECTS\foro_web\src\libs\app.php(17): App->loadMain(Array)
+#3 E:\XAMPP\htdocs\PROJECTS\foro_web\index.php(5): App->__construct()
+#4 {main}
+  thrown in E:\XAMPP\htdocs\PROJECTS\foro_web\src\main\controllers\c_login.php on line 6
+[30-Mar-2022 22:50:33 Europe/Berlin] A LA GRANDE LE PUSE CUCA
+[30-Mar-2022 22:50:53 Europe/Berlin] A LA GRANDE LE PUSE CUCA
+[30-Mar-2022 22:51:22 Europe/Berlin] A LA GRANDE LE PUSE CUCA
+[30-Mar-2022 22:51:22 Europe/Berlin] Inicio de Controlador
+[30-Mar-2022 23:56:25 Europe/Berlin] A LA GRANDE LE PUSE CUCA
+[30-Mar-2022 23:56:25 Europe/Berlin] Inicio de Controlador
+[30-Mar-2022 23:58:48 Europe/Berlin] A LA GRANDE LE PUSE CUCA
+[30-Mar-2022 23:58:48 Europe/Berlin] Inicio de Controlador
+[30-Mar-2022 23:59:46 Europe/Berlin] A LA GRANDE LE PUSE CUCA
+[30-Mar-2022 23:59:46 Europe/Berlin] Inicio de Controlador
+[30-Mar-2022 23:59:54 Europe/Berlin] A LA GRANDE LE PUSE CUCA
+[30-Mar-2022 23:59:54 Europe/Berlin] Inicio de Controlador
