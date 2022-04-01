@@ -1,12 +1,17 @@
 
 <?php
 
-class Login {
+class Login extends Controller  {
 
     function __construct(){
-        echo " <h1>TAMARINDO</h1> ";
-        error_log('Inicio de Controlador');
+        
+        parent::__construct();
+        
+        error_log('Login:: created');
+    }
 
+    function render(){
+        $this->view->render('login');
     }
 }
 ?>

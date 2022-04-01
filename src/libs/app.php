@@ -10,15 +10,13 @@ class App{
         settingErrors();
 
         $url = cleanURL();
-        //$url = "ABC";
         self::loadMain($url);
+        var_dump($url);
     }
 
     function loadMain($controller){
-        // .. TODO: loadController
+        
         $mainC = redirectToController($controller);
-        $mainC->loadModel('login');        
-        $mainC->render();
     }
 }
 ?>

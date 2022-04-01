@@ -1,6 +1,13 @@
 <?php
     //.. config file
 
+    define('URL','http://localhost:80/PROJECTS/foro_web');
+    define('HOST','localhost');
+    define('DB','ihc_forum');
+    define('USER','root');
+    define('PASSWORD','root');
+    define('CHARSET','utf8mb4');
+
     function settingErrors(){
 
         $errorPath = $_SERVER['DOCUMENT_ROOT'].'/PROJECTS/foro_web/src/libs/docs/logs/php-project.log';

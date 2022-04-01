@@ -1,3 +1,4 @@
+
 .search{
     display: flex;
     justify-content: center;
@@ -5,4 +6,5 @@
     align-items: center;
     background-color: #3FA5F5;
     color: #fff;
+    height: 700px;
 }

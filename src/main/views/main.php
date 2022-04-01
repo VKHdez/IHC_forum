@@ -1,57 +1,58 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRISMA FORUM</title>
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../css/main.css" type="text/css">
+    <link href="src/css/main.css" rel="stylesheet" type="text/css">
+
+    <title>PRISMA FORUM</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-light bg-light">
-        <div class="container-md d-flex justify-content-between">
-            <a class="navbar-brand" href="#">
-                PRISMA FORUM
-            </a>
-            <div class="loginRegister">
-                <button type="button" class="btn btn-light">Iniciar Sesión</button>
-                <button type="button" class="btn btn-primary">Registrarse</button>
-            </div>
-        </div>
-    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+    <?php include('src/main/views/menu.php');?>
+
     <main>
-        <div class="search">
-            <div class="container p-3">
-                <p class="fs-2 white">¿Que vas a estudiar hoy?</p>
+        <div class="d-flex flex-column align-items-center justify-content-center" style="background-color:#3FA5F5; height:100vh;">
+            <div class="container w-8">
+                <p class="fs-2 white mb-4 text-white">¿Que vas a estudiar hoy?</p>
                 <form>
-                    <div class="input-group mb-3">
+                    <div class="input-group mb-4">
                         <input type="text" class="form-control" placeholder="Aprendamos algo nuevo..." aria-describedby="button-addon2">
                     </div>
                 </form>
             </div>
-            <p>Únete a miles de estudiantes y profesionales que comparten sus conocimientos con el mundo</p>
+            <p class="text-white">Únete a miles de estudiantes y profesionales que comparten sus conocimientos con el mundo</p>
         </div>
     </main>
+
     <section>
         <div class="container mt-3">
             <p class="fs-4">TEMAS RECIENTES</p>
-            <ul class="list-group">
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <span class="lead"><strong>¿Cómo realizo un login en php & SQL Server?</strong></span>
-                    <span class="lead">Saludos. Tengo un form en php pero ...</span>
-                    <span class="lead">Añadido el 04 del 03 del 2022</span>
-                </li>
-            </ul>
+            <table class="table">
+                <tbody>
+                    <tr class="">
+                        <td class="" ><strong>¿Cómo realizo un login en php & SQL Server?</strong></td>
+                        <td class="">Saludos. Tengo un form en php pero ...</td>
+                        <td class="">Añadido el 04 del 03 del 2022</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
         <div class="d-flex justify-content-center mt-3 mb-3">
-            <a href="#" class="link-dark">Ver más...</a>
+            <a href="#" class="primary-link">Ver más...</a>
         </div>
     </section>
-    <footer class="d-flex justify-content-center bg-light">
-        <p>FORO UNIVERSITARIO - Interacción Humano Computadora - Primavera 2022</p>
+    <footer class="position-absolute b-0 w-100 bg-light">
+        <div class="text-center p-3">
+            <p class="text-dark">FORO UNIVERSITARIO - Interacción Humano Computadora - Primavera 2022</p>
+        </div>
     </footer>
 </body>
 </html>
