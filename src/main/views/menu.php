@@ -4,7 +4,7 @@
                 PRISMA FORUM
             </a>
             <div class="loginRegister">
-                <button type="button" class="btn btn-light">Iniciar Sesión</button>
+                <button type="button" class="btn btn-light">Iniciar</button>
                 <button type="button" class="btn btn-primary">Registrarse</button>
             </div>
         </div>
