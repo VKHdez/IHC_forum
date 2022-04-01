@@ -3,6 +3,11 @@
 include dirname(__FILE__)."/../conf/conf.php";
 include dirname(__FILE__)."/../conf/route.php";
 
+/**
+ * Class App
+ * Main Application Class
+ */
+
 class App{
 
     function __construct(){
