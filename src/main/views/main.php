@@ -19,8 +19,8 @@
     <?php include('src/main/views/menu.php');?>
 
     <main>
-        <div class="d-flex flex-column align-items-center justify-content-center" style="background-color:#3FA5F5; height:100vh;">
-            <div class="container w-8">
+        <div class="d-flex flex-column align-items-center justify-content-center" style="height:100vh; background-color:#52a2bf;">
+            <div class="container w-8" style="">
                 <p class="fs-2 white mb-4 text-white">¿Que vas a estudiar hoy?</p>
                 <form>
                     <div class="input-group mb-4">
