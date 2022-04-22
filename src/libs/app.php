@@ -16,7 +16,7 @@ class App{
 
         $url = cleanURL();
         self::loadMain($url);
-        var_dump($url);
+        // var_dump($url);
     }
 
     function loadMain($controller){

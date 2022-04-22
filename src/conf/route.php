@@ -1,11 +1,7 @@
 <?php
     // .. ROUTING file
 
-    include dirname(__FILE__)."/../main/controllers/error.php";
-
-    function verifyURL(){
-
-    }
+    include dirname(__FILE__)."/../main/controllers/c_error.php";
 
     function redirectToController($url){
 
@@ -39,7 +35,7 @@
 
             if( !isset($url[1])){ // Checks if method is defined in URL
                 
-                $controller->render(); // NOT: Loads default Method
+                $controller->render(); // NOTE: Loads default Method
             }else{
 
                 if( !method_exists($controller, $url[1]) ){ // Check if Method EXIST whithin the Controller
@@ -65,6 +61,7 @@
 
         }else{
             $controller = new IHCError();
+            $controller->render();
             error_log('Acceso a Controlador no definido = '.$url[0]);
         }
     }

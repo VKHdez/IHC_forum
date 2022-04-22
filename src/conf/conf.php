@@ -5,7 +5,7 @@
     define('HOST','localhost');
     define('DB','ihc_forum');
     define('USER','root');
-    define('PASSWORD','root');
+    define('PASSWORD','');
     define('CHARSET','utf8mb4');
 
     function settingErrors(){

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -14,18 +13,20 @@
 </head>
 
 <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
 
-    <?php include('src/main/views/menu.php');?>
+    <?php include('src/main/views/menu.php'); ?>
 
     <main>
         <div class="d-flex flex-column align-items-center justify-content-center" style="height:100vh; background-color:#4d5869;">
             <div class="container p-4" style="background-color:#fff; border-radius:20px; width:350px; ">
                 <h5 class='mt-3' style="margin-bottom:40px"> <strong>REGISTRARSE</strong> </h5>
 
-                <form action='main' method='post' class='w-100'>
+                <form action="<?php echo (constant('URL') . '/register/newUser'); ?>" method='post' class='w-100'>
+                    <input class=' form-control w-100 rounded-pill' type='text' placeholder='nickname' name='nickname' required /> <br>
                     <input class=' form-control w-100 rounded-pill' type='text' placeholder='email' name='email' required /> <br>
-                    <input class=' form-control w-100 rounded-pill' type='password' placeholder='pass' name='pass' required /> <br>
+                    <input class=' form-control w-100 rounded-pill' type='password' placeholder='pass' name='password' required /> <br>
 
                     <div class="d-flex justify-content-around">
                         <a class=' btn btn-link' href="main"> < Inicio</a>

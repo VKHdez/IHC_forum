@@ -1,0 +1,42 @@
+{
+    "sites" : [
+        {
+            "site": "main",
+            "access": "public",
+            "rol": "usuario"
+        },{
+            "site": "login",
+            "access": "public",
+            "rol": "usuario"
+        },
+        {
+            "site": "register",
+            "access": "public",
+            "rol": "usuario"
+        },
+        {
+            "site": "main",
+            "access": "public",
+            "rol": "usuario"
+        },
+        {
+            "site": "/",
+            "access": "public",
+            "rol": "usuario"
+        },
+        {
+            "site": "result",
+            "access": "public",
+            "rol": "usuario"
+        },
+        {
+            "site": "thread",
+            "access": "private",
+            "rol": "usuario"
+        }
+    ],
+    "default-sites": {
+        "usuario": "main",
+        "admin": "main"
+    }
+}

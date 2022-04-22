@@ -14,7 +14,8 @@
 </head>
 
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
 
     <?php include('src/main/views/menu.php');?>
 
@@ -22,9 +23,9 @@
         <div class="d-flex flex-column align-items-center justify-content-center" style="height:100vh; background-color:#52a2bf;">
             <div class="container w-8" style="">
                 <p class="fs-2 white mb-4 text-white">¿Que vas a estudiar hoy?</p>
-                <form>
+                <form action="<?php echo (constant('URL') . '/result/verifySearch'); ?>" method='get'>
                     <div class="input-group mb-4">
-                        <input type="text" class="form-control" placeholder="Aprendamos algo nuevo..." aria-describedby="button-addon2">
+                        <input name='search' type="text" class="form-control" placeholder="Aprendamos algo nuevo..." aria-describedby="button-addon2">
                     </div>
                 </form>
             </div>
